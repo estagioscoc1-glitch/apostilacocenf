@@ -1,0 +1,47 @@
+{
+  "id": "FEAT-001",
+  "type": "feat",
+  "description": "Create the complete 15-page professional HTML sales brochure for the nursing technical course at Colegio Oswaldo Cruz. Single self-contained HTML file with embedded CSS, inline SVGs, animations, and responsive design.",
+  "status": "in_progress",
+  "steps": [
+    "Create /projects/sandbox/apostilacocenf/apostila.html as a single complete HTML file",
+    "Implement 15 distinct page sections, each with unique layout and design: 1) Cover/Hero page with course title and institution name, 2) Market transformation page (why healthcare careers), 3) Life transformation vision (18 months future), 4) The nursing technician role explained, 5) Market demand statistics with data visualization, 6) Career growth path with timeline, 7) Course structure and curriculum overview, 8) Institutional differentials of Colegio Oswaldo Cruz, 9) Student testimonials (realistic fictional), 10) Career comparison table, 11) Enrollment bonuses and extras, 12) FAQ section, 13) Financial investment and ROI, 14) Call-to-action decision page, 15) Contact and next steps",
+    "Design a professional color palette: primary dark blue (#1a237e or similar), white (#ffffff), health green (#00897b or similar), gold accents (#ffd700 or similar), with gradients and modern styling",
+    "Embed all CSS within a <style> tag - use modern CSS features: flexbox, grid, gradients, custom properties, smooth transitions",
+    "Create inline SVG illustrations for each page section - nurses, hospitals, medical equipment, growth charts, career paths, heart/health icons, graduation caps, stethoscopes, etc. Each SVG should be detailed and professional-looking",
+    "Implement CSS animations: fade-in on scroll effects using @keyframes and animation properties, hover effects on cards and buttons, subtle pulse animations on CTAs",
+    "Write highly persuasive Portuguese copy improving on the original content - use mental triggers: urgency (vagas limitadas), social proof (milhares de formados), authority (instituicao reconhecida), scarcity (turmas com inicio proximo)",
+    "Add realistic fictional testimonials with names, ages, backgrounds, and transformation stories",
+    "Include market statistics section with data: average salary ranges, job openings per year, employment rate after graduation, growth projections",
+    "Add a summarized curriculum grid showing main subjects/modules of the course",
+    "Create a career comparison table (nursing tech vs other careers - time to market, salary, demand, stability)",
+    "Make the entire layout responsive using CSS media queries for mobile, tablet, and desktop",
+    "Use Google Fonts via CDN link for elegant typography (e.g., Montserrat for headings, Open Sans or Inter for body)",
+    "Ensure each page/section has visual separation and a distinct design approach (alternating layouts, different background treatments, varied content arrangements)"
+  ],
+  "acceptance_criteria": [
+    "File exists at /projects/sandbox/apostilacocenf/apostila.html",
+    "HTML file is well-formed and opens correctly in a browser",
+    "Contains exactly 15 distinct page/section divisions",
+    "All CSS is embedded within the HTML file (no external CSS files)",
+    "Contains inline SVG illustrations (at least one per page section)",
+    "CSS animations are present (fade-in, hover effects)",
+    "Content is in Portuguese and is persuasive with mental triggers",
+    "Responsive design with media queries for different screen sizes",
+    "Color palette uses blues, greens, white, and gold accents",
+    "Contains testimonials, statistics, curriculum, FAQ, and career comparison sections",
+    "Institution name 'Colegio Oswaldo Cruz' is prominently featured",
+    "File is completely self-contained (no external image dependencies)"
+  ],
+  "verification": [
+    "Run: test -f /projects/sandbox/apostilacocenf/apostila.html && echo 'File exists'",
+    "Run: python3 -c \"from html.parser import HTMLParser; HTMLParser().feed(open('/projects/sandbox/apostilacocenf/apostila.html').read()); print('Valid HTML')\"",
+    "Run: grep -c 'class=.*page\\|class=.*section\\|id=.*page\\|id=.*section' /projects/sandbox/apostilacocenf/apostila.html to confirm multiple sections",
+    "Run: grep -c '<svg' /projects/sandbox/apostilacocenf/apostila.html to confirm inline SVGs exist",
+    "Run: grep -c '@keyframes\\|animation:' /projects/sandbox/apostilacocenf/apostila.html to confirm CSS animations",
+    "Run: grep -c '@media' /projects/sandbox/apostilacocenf/apostila.html to confirm responsive design",
+    "Run: grep -c 'Oswaldo Cruz' /projects/sandbox/apostilacocenf/apostila.html to confirm institution name appears"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

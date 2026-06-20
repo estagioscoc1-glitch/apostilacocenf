@@ -1,0 +1,16 @@
+{
+  "project_type": "Static HTML sales brochure/booklet",
+  "language": "HTML/CSS/SVG",
+  "build_system": "None - single HTML file output",
+  "test_framework": "None - visual verification only",
+  "build_command": "N/A",
+  "test_command": "N/A - verify file exists and is valid HTML",
+  "verification_instructions": "1. Confirm apostila.html exists at /projects/sandbox/apostilacocenf/apostila.html. 2. Verify HTML is well-formed. 3. Confirm it contains 15 distinct page sections. 4. Confirm inline SVG illustrations exist. 5. Confirm responsive CSS is embedded.",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "No setup needed - this is a single file creation task",
+  "environment_constraints": "All assets must be self-contained in the HTML file (inline SVGs, embedded CSS, no external image dependencies). Google Fonts CDN is acceptable for typography.",
+  "contribution_requirements": "Output file must be saved to /projects/sandbox/apostilacocenf/apostila.html",
+  "key_patterns": "Single HTML file with embedded CSS and inline SVG illustrations. 15 page sections with unique designs. Professional color palette: dark blue, white, health green, gold accents.",
+  "relevant_files": ["/projects/sandbox/apostilacocenf/conteudo.txt", "/projects/sandbox/apostilacocenf/apostila.html"],
+  "directory_structure": "Simple repository with MODELO.docx (original template), MODELO.pdf (PDF version), conteudo.txt (extracted text content). Output goes to apostila.html in same directory."
+}
